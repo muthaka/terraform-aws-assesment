@@ -46,10 +46,12 @@ The command will start the service which will run on the url[machine ip address]
 Testing endpoint /tags
 
 endpoint - url[machine ip address]:8080/tags
+
 The endpoint will return the Tag name and Tag owner.
 
 
 Testing endpoint /shutdown
+
 endpoint - url[machine ip address]:8080/shutdown
 
 The endpoint will shutdown the instance
