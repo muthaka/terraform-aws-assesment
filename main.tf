@@ -9,7 +9,7 @@ resource "aws_instance" "app_server" {
   instance_type = var.instance_type
 
   tags = {
-    Name = var.tag_name
+    Name  = var.tag_name
     Owner = var.tag_owner
   }
 
@@ -17,14 +17,14 @@ resource "aws_instance" "app_server" {
 
 resource "aws_s3_bucket" "flugel-s3-bucket" {
   bucket_prefix = var.bucket_prefix
-  acl = var.acl
-  
-   versioning {
+  acl           = var.acl
+
+  versioning {
     enabled = var.versioning
   }
-  
+
   tags = {
-    Name = var.tag_name
+    Name  = var.tag_name
     Owner = var.tag_owner
   }
 }

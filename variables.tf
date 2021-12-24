@@ -9,44 +9,44 @@ variable "aws_profile" {
 }
 
 variable "ami_prefix" {
-    type        = string
-    description = "Creates a unique EC2 instance name beginning with the specified prefix."
-    default     = "ami-830c94e3"
+  type        = string
+  description = "Creates a unique EC2 instance name beginning with the specified prefix."
+  default     = "ami-830c94e3"
 }
 
 variable "instance_type" {
-    type        = string
-    description = "Defines the EC2 instance type of the resource"
-    default     = "t2.micro"
+  type        = string
+  description = "Defines the EC2 instance type of the resource"
+  default     = "t2.micro"
 }
 
 variable "tag_name" {
-    type        = string
-    description = "Creates a name of the tag name"
-    default     = "Flugel"
+  type        = string
+  description = "Creates a name of the tag name"
+  default     = "Flugel"
 }
 
 variable "tag_owner" {
-    type        = string
-    description = "Creates a name of the tag owner"
-    default     = "InfraTeam"
+  type        = string
+  description = "Creates a name of the tag owner"
+  default     = "InfraTeam"
 }
 
 variable "bucket_prefix" {
-    type        = string
-    description = "Creates a unique bucket name beginning with the specified prefix."
-    default     = "flugel-s3bucket-"
+  type        = string
+  description = "Creates a unique bucket name beginning with the specified prefix."
+  default     = "flugel-s3bucket-"
 }
 
 variable "versioning" {
-    type        = bool
-    description = "A state of versioning."
-    default     = true
+  type        = bool
+  description = "A state of versioning."
+  default     = true
 }
 
 variable "acl" {
-    type        = string
-    description = "Defaults to private"
-    default     = "private"
+  type        = string
+  description = "Defaults to private"
+  default     = "private"
 }
 
